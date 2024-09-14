@@ -8,10 +8,10 @@
 	<groupId>ca.uhn.hapi.fhir</groupId>
 	<artifactId>hapi-fhir</artifactId>
 	<packaging>pom</packaging>
-	<version>7.4.0</version>
+	<version>7.4.1000</version>
 
 	<name>HAPI-FHIR</name>
-	<description>An open-source implementation of the FHIR specification in Java.</description>
+	<description>An open-source implementation of the FHIR specification in Java.(AV)</description>
 	<url>https://hapifhir.io</url>
 
 	<organization>

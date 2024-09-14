@@ -233,6 +233,7 @@ public class FhirValidator {
 	 * @since 4.0.0
 	 */
 	public ValidationResult validateWithResult(String theResource, ValidationOptions theOptions) {
+		ourLog.info("Inside validateWithResult input = " + theResource);
 		Validate.notNull(theResource, "theResource must not be null");
 		IValidationContext<IBaseResource> validationContext =
 				ValidationContext.forText(myContext, theResource, theOptions);
@@ -250,6 +251,7 @@ public class FhirValidator {
 	 * @since 4.0.0
 	 */
 	public ValidationResult validateWithResult(IBaseResource theResource, ValidationOptions theOptions) {
+		ourLog.info("Inside validateWithResult input = " + theResource.toString());
 		Validate.notNull(theResource, "theResource must not be null");
 		IValidationContext<IBaseResource> validationContext =
 				ValidationContext.forResource(myContext, theResource, theOptions);
